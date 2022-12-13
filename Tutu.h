@@ -13,15 +13,15 @@ void gotoxy(int x,int y);
 
 class User
 {
-    public:
-    User();
-    ~User();
-    void Registers();
-    void Login();
-    void Save();
-    void Read();
-    private:
-    string password;
-}Us;
+private:
+	string phone;//电话
+	string password;//密码
+public:
+	User() {};
+	void Registers();//注册
+	void Login();//登录
+	void save();//保存
+	void read();//读取
+}us;
 
-User user[UserNumber];//
+User user[SIZE];
